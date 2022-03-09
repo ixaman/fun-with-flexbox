@@ -85,7 +85,41 @@ body {
 .shopper {
   position: absolute;
   left: 50%;
-  z-index: 5;
+  /* z-index: 5; */
   transform: translateX(-57%) translateY(-4%);
   top: auto;
+}
+
+.dots {
+  width: 1rem;
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  top: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dot-1,
+.dot-2,
+.dot-3 {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #333333;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.dot-1 {
+  background-color: rgb(238, 138, 155);
+}
+.dot-2,
+.dot-3 {
+  background-color: white;
+  border: 1px solid rgb(238, 138, 155);
+}
+.h-btn {
+  color: rgb(238, 138, 155);
+  margin-top: 3rem;
+  display: inline-block;
 }
